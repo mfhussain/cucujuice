@@ -12,8 +12,19 @@
       color: #1F4D2B;
     }
     header {
+      padding: 2rem 1rem 1rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    header img {
+      max-width: 100px;
+      height: auto;
+    }
+    .header-text {
       text-align: center;
-      padding: 2rem 1rem;
+      flex-grow: 1;
     }
     h1 {
       font-family: 'Cooper Black', serif;
@@ -23,7 +34,7 @@
     h2 {
       font-family: 'Playfair Display SC', serif;
       font-style: italic;
-      margin: 0.5rem 0 2rem;
+      margin: 0.5rem 0 0;
     }
     .section {
       padding: 2rem 1rem;
@@ -44,11 +55,15 @@
     }
     .nutrition, .ingredients {
       font-family: 'Roboto Mono', monospace;
-      background-color: #FFFBEA;
-      padding: 1rem;
-      margin: 1rem auto;
-      border-radius: 10px;
-      max-width: 400px;
+      padding: 0;
+      margin: 0 0 1rem 0;
+      max-width: 100%;
+      background: none;
+    }
+    .nutrition p, .ingredients p {
+      margin: 0;
+      padding: 0;
+      text-align: left;
     }
     footer {
       text-align: center;
@@ -71,7 +86,6 @@
       }
       .nutrition, .ingredients {
         font-size: 0.95rem;
-        padding: 1rem;
       }
       .section img {
         max-width: 100%;
@@ -82,15 +96,16 @@
 </head>
 <body>
   <header>
-    <img src="FinalLogo.png" alt="Cucu Juice Logo" style="max-width:200px" />
-    <h1>Cucu Juice</h1>
-    <h2>Piyo Aur Jiyo</h2>
+    <img src="FinalLogo.png" alt="Cucu Juice Logo" />
+    <div class="header-text">
+      <h1>Cucu Juice</h1>
+      <h2>Piyo Aur Jiyo</h2>
+    </div>
   </header>
 
   <div class="section">
     <h3>Why Cucu Juice?</h3>
     <p>Cucu Juice is a refreshing, healthy, and organic drink made from fresh cucumber, lemon, and mint – perfect for the hot Indian summer! With natural preservatives and no added sugar, it’s suitable for all age groups above 6 years.</p>
-    <img src="CucuJuice_Wraparound_FinalLabel.png" alt="Cucu Juice Label">
   </div>
 
   <div class="section">
